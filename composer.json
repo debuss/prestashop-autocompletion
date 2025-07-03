@@ -1,0 +1,44 @@
+{
+  "name": "debuss-a/prestashop-autocompletion",
+  "description": "A package for PrestaShop module development that provides autocompletion for various classes, controllers, hooks, constants...",
+  "license": "MIT",
+  "type": "metapackage",
+  "authors": [
+    {
+      "name": "Alexandre Debusschère",
+      "email": "alexandre.debusschere@hey.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "smarty/smarty": "^4.3.1",
+    "tecnickcom/tcpdf": "^6.2.12",
+    "twig/twig": "^3.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "PrestaShopBundle\\": "src/PrestaShopBundle/",
+      "PrestaShop\\PrestaShop\\": "src/"
+    },
+    "classmap": [
+      "config/",
+      "var/",
+      "classes/",
+      "controllers/",
+      "tools/"
+    ]
+  },
+  "extra": {
+    "symfony": {
+      "require": "~6.4"
+    },
+    "symfony-app-dir": "app",
+    "symfony-assets-install": "relative",
+    "symfony-bin-dir": "bin",
+    "symfony-tests-dir": "tests",
+    "symfony-var-dir": "var",
+    "symfony-web-dir": "."
+  }
+}
