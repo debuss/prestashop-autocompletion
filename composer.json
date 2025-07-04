@@ -2,7 +2,6 @@
   "name": "debuss-a/prestashop-autocompletion",
   "description": "A package for PrestaShop module development that provides autocompletion for various classes, controllers, hooks, constants...",
   "license": "MIT",
-  "type": "metapackage",
   "authors": [
     {
       "name": "Alexandre Debusschère",
